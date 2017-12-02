@@ -1,0 +1,15 @@
+.search_input {
+  width : 400px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.btn-lg {
+  background-color: #005689;
+}
+
+.btn-lg:hover {
+  background-color: #aadce6;
+  color : #005689;
+}

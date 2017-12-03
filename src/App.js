@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import logo from './logo.svg'
 import './App.css'
 import axios from 'axios'
 import Search from './Search.js'
@@ -21,11 +20,9 @@ class App extends Component {
     this.setState ({
       word : event.target.value
     })
-    console.log(this.state.word)
   }
 
   searchWord(event){
-    console.log("clicked !")
     axios.get('https://content.guardianapis.com/search?q='+ this.state.word +'&api-key=test&show-fields=starRating,headline,thumbnail')
       .then((response) => {
         this.setState({posts: response.data.response.results});
@@ -60,6 +57,8 @@ class App extends Component {
               <NewsList res={this.state.posts} />
             </div>
         </main>
+
+        <footer className="footer">Created by <a href="https://github.com/MiraManai" className="footer-link">Mira</a> </footer>
 
       </div>
     )

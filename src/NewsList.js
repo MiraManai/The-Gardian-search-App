@@ -5,11 +5,11 @@ import NewsItem from './NewsItem.js'
 class NewsList extends Component {
   render() {
     return (
-      <ul className="list-unstyled">
+      <ul className="list-unstyled ">
       {
         this.props.res.map((el,i) => {
           return <div key={i}>
-          <li className="media"> <NewsItem el={el}/></li>
+          <li className="news-list"> <NewsItem el={el}/></li>
           </div>
         })
       }

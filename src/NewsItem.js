@@ -4,18 +4,17 @@ import './NewsItem.css'
 class NewsItem extends Component {
   render() {
     return (
-    <div className='response-container'>
-        <a href={this.props.el.webUrl} target='_blank'>
-          <img className='d-flex mr-3' src={this.props.el.fields.thumbnail} />
-          <div className="media-body">
-            <h5 className="mt-0 mb-1">{this.props.el.webTitle}</h5>
 
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-          </div>
+        <div className="card news">
+          <a href={this.props.el.webUrl} target='_blank' className="news-link">
+            <img className="card-img-top" src={this.props.el.fields.thumbnail} alt="Card image cap"/>
+            <div className="card-block">
+              <h4 className="card-title news-title">{this.props.el.webTitle}</h4>
+              <p className="card-text news-title">{this.props.el.webPublicationDate.slice(0, 10)}</p>
+            </div>
+          </a>
+        </div>
 
-
-        </a>
-    </div>
   )
   }
 }

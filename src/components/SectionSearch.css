@@ -1,0 +1,25 @@
+.section {
+  margin-right: 250px;
+  margin-left: 250px;
+  background-color: #005689!important;
+}
+
+.nav-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+}
+
+.text-sec {
+  color: white;
+  font-weight: bold;
+}
+
+.text-sec:hover {
+  color: #aadce6;
+}
+
+.text-sec:active {
+  color: #aadce6;
+}
